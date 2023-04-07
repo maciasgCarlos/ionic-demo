@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 
@@ -9,6 +9,18 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
   standalone: true,
   imports: [IonicModule, ExploreContainerComponent],
 })
-export class Tab1Page {
+export class Tab1Page implements OnInit {
   constructor() {}
+
+  ngOnInit(): void {
+    let numero =10;
+    //debugger;
+
+    numero=20;
+
+    numero= numero + 10;
+
+    console.log(numero);
+    
+  }
 }
